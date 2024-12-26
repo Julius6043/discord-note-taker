@@ -1,0 +1,55 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+env/
+venv/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python debug files
+*.pyo
+
+# Uvicorn logs
+*.access.log
+*.error.log
+
+# Pytest cache
+.cache/
+
+# Environmental variables
+.env
+.env.*
+
+# Byte-compiled files
+*.pyc
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# Test output
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other build files
+build/
+dist/
+*.egg-info/
