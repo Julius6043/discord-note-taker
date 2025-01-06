@@ -14,7 +14,7 @@ A Discord bot that automatically records, transcribes, and summarizes voice chan
 
 ### Prerequisites
 
-- Python 3.8+
+- NodeJS 20+
 - Discord Bot Token
 - Groq API Key
 - Deepgram API Key
@@ -24,12 +24,12 @@ A Discord bot that automatically records, transcribes, and summarizes voice chan
 1. Clone the repository:
 ```bash
 git clone https://github.com/mdimado/discord-meeting-assistant.git
-cd discord-meeting-assistant
+cd discord-meeting-assistant/bot
 ```
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
 3. Create a `.env` file in the project root with your API keys:
@@ -42,14 +42,18 @@ DEEPGRAM_API_KEY=your_deepgram_api_key
 ### Running the Bot
 
 ```bash
-python main.py
+node main.js
 ```
 
 ## Usage
 
 The bot responds to the following commands:
 
-- `!join` - Bot joins your current voice channel and starts recording
+- `!join` - Bot joins your current voice channel
+- `!record` - Bot starts recording audio streams
+- `!stoprecording` - Bot stops recording the audio streams
+- `!chatsummary` - Bot gives only chat message summary
+- `!allsummary` - Bot gives both chat and voice chat summary
 - `!leave` - Bot leaves the channel and provides meeting transcript and summary
 - `!status` - Shows current recording status and statistics
 
@@ -67,7 +71,12 @@ The bot uses the following environment variables:
 
 ```
 discord-meeting-assistant/
-├── main.py           # Main bot code
+├──bot/
+├──├──.env # Environment variables
+├──├──main.js # Bot code in JavaScript
+├──├──package-lock.json
+├──├──package.json
+├── main.py           # Bot code in python
 ├── requirements.txt  # Project dependencies
 ├── .env             # Environment variables
 └── README.md        # Documentation

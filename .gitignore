@@ -6,12 +6,17 @@ __pycache__/
 env/
 venv/
 
+*/audio_chunks/
 # IDE specific files
 .vscode/
 .idea/
 
+*/node_modules/
 # Log files
 *.log
+*bot.js
+*.pcm
+*.wav
 
 # System files
 .DS_Store
