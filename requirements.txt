@@ -1,0 +1,7 @@
+python-dotenv
+discord.py[voice]
+fastapi
+groq
+deepgram-sdk
+uvicorn
+nest-asyncio
