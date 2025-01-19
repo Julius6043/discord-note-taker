@@ -5,3 +5,4 @@ groq
 deepgram-sdk
 uvicorn
 nest-asyncio
+langchain-groq
